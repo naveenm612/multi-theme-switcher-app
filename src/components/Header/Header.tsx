@@ -12,7 +12,10 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="logo">ThemeVerse</div>
+      <NavLink to="/" className="logo" onClick={handleNavClick}>
+        ThemeVerse
+      </NavLink>
+
 
       <div className={`nav-toggle ${menuOpen ? "open" : ""}`} onClick={handleMenuToggle}>
         <div className="bar"></div>

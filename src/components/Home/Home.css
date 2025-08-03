@@ -9,6 +9,14 @@
   text-align: center;
 }
 
+.home-subtext {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+
 .featured-grid {
   display: grid;
   gap: 20px;

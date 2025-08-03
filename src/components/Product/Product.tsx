@@ -1,24 +1,3 @@
-// import React from "react";
-// import ProductCard from "./ProductCard";
-// import { products } from "../../pages/dataproducts";
-// import "./ProductCard.css";
-
-// const Product: React.FC = () => {
-//   return (
-//     <div style={{ padding: "20px" }}>
-//       <h2>All Products</h2>
-//        <div className="product-grid">
-//       {products.map((product) => (
-//         <ProductCard key={product.id} product={product} />
-//       ))}
-//     </div>
-//     </div>
-//   );
-// };
-
-// export default Product;
-
-
 import React, { useState, useMemo } from "react";
 import ProductCard from "./ProductCard";
 import { products } from "../../pages/dataproducts";
