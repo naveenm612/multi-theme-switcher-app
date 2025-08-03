@@ -1,0 +1,108 @@
+.contact-section {
+  padding: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.title-container {
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.about-description {
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+.contact-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-card {
+  flex: 1 1 48%;
+  min-width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: start;
+}
+
+.contact-form-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-block {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.info-title {
+  font-weight: 500;
+}
+
+.info-text {
+  margin-left: 30px;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-grid {
+    flex-direction: column;
+  }
+
+  .contact-card {
+    max-width: 100%;
+  }
+}
+
+/* THEME 1 - Minimalist */
+.theme1 .contact-section {
+  background: #ffffff;
+  color: #111;
+}
+.theme1 .contact-card {
+  background: #f8f8f8;
+}
+
+/* THEME 2 - Professional (Dark Sidebar) */
+.theme2 .contact-section {
+  background: #1e1e2f;
+  color: #e5e5e5;
+}
+.theme2 .contact-card {
+  background: #2d2d3f;
+}
+
+/* THEME 3 - Playful */
+.theme3 .contact-section {
+  background: #fff8f0;
+  color: #333;
+}
+.theme3 .contact-info-box {
+  background: #e3faff;
+}
+.theme3 .contact-form-box {
+  background: #ffe9e3;
+}
+.theme3 .title {
+  color: #d64161;
+}

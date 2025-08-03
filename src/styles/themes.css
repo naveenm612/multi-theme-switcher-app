@@ -1,0 +1,66 @@
+/* themes.css */
+.theme1 {
+  --bg-color: #ffffff;
+  --text-color: #222;
+  --font-family: 'Arial', sans-serif;
+  --card-bg: #f9f9f9;
+}
+
+.theme2 {
+  --bg-color: #121212;
+  --text-color: #f5f5f5;
+  --font-family: 'Georgia', serif;
+  --card-bg: #1e1e1e;
+}
+
+.theme3 {
+  --bg-color: #fffbf0;
+  --text-color: #2c2c2c;
+  --font-family: 'Pacifico', cursive;
+  --card-bg: #ffe4e1;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+.container {
+  padding: 2rem;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.contact-form,
+.contact-info {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 300px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--text-color);
+  color: var(--bg-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
