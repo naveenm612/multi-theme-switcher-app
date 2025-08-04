@@ -13,7 +13,7 @@ const Product: React.FC = () => {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All Categories");
   const [sortBy, setSortBy] = useState("Name A-Z");
-  const [view, setView] = useState<"grid" | "list">("grid");
+  const [view] = useState<"grid" | "list">("grid");
 
   const filteredProducts = useMemo(() => {
     let result = [...products];

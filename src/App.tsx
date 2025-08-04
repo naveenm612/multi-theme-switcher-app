@@ -3,9 +3,10 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
-import Contact from "./components/Contact/Contact";
-import "./styles/themes.css";
 import Product from "./components/Product/Product";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import "./styles/themes.css";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
+        <Footer />
       </BrowserRouter>
     </ThemeProvider>
   );

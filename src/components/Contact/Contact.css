@@ -20,17 +20,17 @@
 
 .contact-grid {
   display: flex;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 20px;
   justify-content: space-between;
+  margin-top: 30px;
 }
 
 .contact-card {
-  flex: 1 1 48%;
-  min-width: 300px;
+  border-radius: 12px;
   padding: 20px;
-  border-radius: 8px;
-  transition: background-color 0.3s ease-in-out;
+  flex: 1 1 100%;
+  box-sizing: border-box;
 }
 
 .contact-info-box {
@@ -62,7 +62,11 @@
   color: var(--text-color);
   margin-bottom: 20px;
 }
-
+@media (max-width: 420px) {
+ .info-text {
+  font-size: 12px;
+}
+}
 /* Responsive */
 @media (max-width: 768px) {
   .contact-grid {
