@@ -9,6 +9,13 @@ const Header = () => {
 
   const handleMenuToggle = () => setMenuOpen(!menuOpen);
   const handleNavClick = () => setMenuOpen(false); // Close on nav click
+  const handleThemeChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setTheme(e.target.value);
+
+    if (window.innerWidth <= 768) {
+      setMenuOpen(false);
+    }
+  };
 
   return (
     <header className="header">
@@ -38,7 +45,7 @@ const Header = () => {
         </NavLink>
         <select
           value={theme}
-          onChange={(e) => setTheme(e.target.value)}
+          onChange={handleThemeChange}
           className="theme-switcher mobile-theme-switcher"
         >
           <option value="theme1">Minimalist</option>
@@ -49,7 +56,7 @@ const Header = () => {
 
       <select
         value={theme}
-        onChange={(e) => setTheme(e.target.value)}
+        onChange={handleThemeChange}
         className="theme-switcher desktop-theme-switcher"
       >
         <option value="theme1">Minimalist</option>

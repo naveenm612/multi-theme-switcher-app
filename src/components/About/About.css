@@ -1,7 +1,7 @@
 .about-container {
   max-width: 1200px;
   margin: auto;
-  padding: 3rem 1rem;
+  /* padding: 3rem 1rem; */
   font-family: var(--font-family);
   color: var(--text-color);
 }

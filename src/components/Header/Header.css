@@ -1,12 +1,39 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 97%;
+  z-index: 1000;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   background: var(--card-bg);
   padding: 1rem 2rem;
   border-bottom: 2px solid #ccc;
-  position: relative;
-  z-index: 10;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 95%;
+    padding: 1rem;
+  }
+}
+@media (max-width: 425px) {
+  .header {
+    width: 93%;
+  }
+}
+@media (max-width: 437px) {
+  .header {
+    width: 91%;
+  }
 }
 
 .logo {
