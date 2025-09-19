@@ -6,11 +6,13 @@ import About from "./components/About/About";
 import Product from "./components/Product/Product";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import { CartProvider } from "./components/Contexts/CartContext";
 import "./styles/themes.css";
 
 function App() {
   return (
     <ThemeProvider>
+       <CartProvider>
       <BrowserRouter>
         <Header />
         <div className="container">
@@ -23,6 +25,7 @@ function App() {
         </div>
         <Footer />
       </BrowserRouter>
+      </CartProvider>
     </ThemeProvider>
   );
 }
